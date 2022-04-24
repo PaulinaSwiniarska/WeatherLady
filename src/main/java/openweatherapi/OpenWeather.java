@@ -1,37 +1,38 @@
+package pl.sdaacademy.openweatherapi;
 
 import com.google.gson.annotations.SerializedName;
 
-public class OpenWeather {
+class OpenWeather {
     private String name;
     @SerializedName("main")
     private WeatherDetails weatherDetails;
     @SerializedName("wind")
     private WindDetails windDetails;
 
-    public OpenWeather() {
+    OpenWeather() {
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    void setName(String name) {
         this.name = name;
     }
 
-    public WeatherDetails getWeatherDetails() {
+    WeatherDetails getWeatherDetails() {
         return weatherDetails;
     }
 
-    public void setWeatherDetails(WeatherDetails weatherDetails) {
+    void setWeatherDetails(WeatherDetails weatherDetails) {
         this.weatherDetails = weatherDetails;
     }
 
-    public WindDetails getWindDetails() {
+    WindDetails getWindDetails() {
         return windDetails;
     }
 
-    public void setWindDetails(WindDetails windDetails) {
+    void setWindDetails(WindDetails windDetails) {
         this.windDetails = windDetails;
     }
 
@@ -50,36 +51,36 @@ class WeatherDetails {
     private float pressure;
     private int humidity;
 
-    public WeatherDetails(float temp, float pressure, int humidity) {
+    WeatherDetails(float temp, float pressure, int humidity) {
         this.temp = temp;
         this.pressure = pressure;
         this.humidity = humidity;
     }
 
-    public WeatherDetails() {
+    WeatherDetails() {
     }
 
-    public float getTemp() {
+    float getTemp() {
         return temp;
     }
 
-    public void setTemp(float temp) {
+    void setTemp(float temp) {
         this.temp = temp;
     }
 
-    public float getPressure() {
+    float getPressure() {
         return pressure;
     }
 
-    public void setPressure(float pressure) {
+    void setPressure(float pressure) {
         this.pressure = pressure;
     }
 
-    public int getHumidity() {
+    int getHumidity() {
         return humidity;
     }
 
-    public void setHumidity(int humidity) {
+    void setHumidity(int humidity) {
         this.humidity = humidity;
     }
 
@@ -97,27 +98,27 @@ class WindDetails {
     private float speed;
     private int deg;
 
-    public WindDetails() {
+    WindDetails() {
     }
 
-    public WindDetails(float speed, int deg) {
+    WindDetails(float speed, int deg) {
         this.speed = speed;
         this.deg = deg;
     }
 
-    public float getSpeed() {
+    float getSpeed() {
         return speed;
     }
 
-    public void setSpeed(float speed) {
+    void setSpeed(float speed) {
         this.speed = speed;
     }
 
-    public int getDeg() {
+    int getDeg() {
         return deg;
     }
 
-    public void setDeg(int deg) {
+    void setDeg(int deg) {
         this.deg = deg;
     }
 
